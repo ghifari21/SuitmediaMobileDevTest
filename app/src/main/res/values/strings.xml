@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">SuitmediaMobileDevTest</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_palindrome">Palindrome</string>
+    <string name="btn_check">CHECK</string>
+    <string name="btn_next">NEXT</string>
+    <string name="second_screen">Second Screen</string>
+    <string name="third_screen">Third Screen</string>
+    <string name="tv_welcome">Welcome</string>
+    <string name="select_user">Selected User Name</string>
+    <string name="btn_choose_a_user">Choose a User</string>
+    <string name="is_palindrome">Is Palindrome</string>
+    <string name="not_palindrome">Not Palindrome</string>
+    <string name="OK">OK</string>
+    <string name="empty_field">This field cannot be empty</string>
+    <string name="retry">Retry</string>
+    <string name="timeout">Timeout</string>
+    <string name="fullname">%s %s</string>
+    <string name="fullname_placeholder">Firstname Lastname</string>
+    <string name="email_placeholder">email@email.com</string>
+    <string name="empty_data">Empty Data</string>
 </resources>
