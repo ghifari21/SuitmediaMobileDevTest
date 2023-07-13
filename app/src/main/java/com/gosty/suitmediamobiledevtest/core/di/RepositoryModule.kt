@@ -7,6 +7,9 @@ import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
+/**
+ * Provide repositories using dependency injection
+ */
 @Module(includes = [NetworkModule::class])
 @InstallIn(SingletonComponent::class)
 abstract class RepositoryModule {

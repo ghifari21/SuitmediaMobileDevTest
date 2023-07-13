@@ -8,6 +8,9 @@ import androidx.paging.LoadStateAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.gosty.suitmediamobiledevtest.databinding.ItemLoadingBinding
 
+/**
+ * Adapter when loading state
+ */
 class LoadingStateAdapter(
     private val retry: () -> Unit
 ) : LoadStateAdapter<LoadingStateAdapter.LoadingStateViewHolder>() {

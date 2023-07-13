@@ -11,6 +11,9 @@ import com.gosty.suitmediamobiledevtest.ui.third.ThirdActivity
 class SecondActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySecondBinding
 
+    /**
+     * to get result from third activity
+     */
     private val launcherIntentUser = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
@@ -30,8 +33,14 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
+        /**
+         * get name from first activity
+         */
         val name = intent.getStringExtra(STRING_EXTRA)
 
+        /**
+         * setup action bar title and up button
+         */
         supportActionBar?.apply {
             title = getString(R.string.second_screen)
             setDisplayHomeAsUpEnabled(true)

@@ -35,9 +35,17 @@ class ThirdActivity : AppCompatActivity() {
     }
 
     private fun setupView() {
-        supportActionBar?.title = getString(R.string.third_screen)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        /**
+         * setup action bar title and up button
+         */
+        supportActionBar?.apply {
+            title = getString(R.string.third_screen)
+            setDisplayHomeAsUpEnabled(true)
+        }
 
+        /**
+         * setting recycler view with paging adapter
+         */
         val layoutManager = LinearLayoutManager(this@ThirdActivity)
         val itemDecoration = DividerItemDecoration(this@ThirdActivity, layoutManager.orientation)
         binding.apply {
@@ -50,11 +58,17 @@ class ThirdActivity : AppCompatActivity() {
                 }
             )
 
+            /**
+             * pull to refresh action
+             */
             refresh.setOnRefreshListener {
                 getUsers()
             }
         }
 
+        /**
+         * managing data state
+         */
         pagingAdapter
             .loadStateFlow
             .asLiveData()
@@ -68,6 +82,9 @@ class ThirdActivity : AppCompatActivity() {
                         is LoadState.NotLoading -> {
                             loadingState(false)
 
+                            /**
+                             * empty data state
+                             */
                             if (pagingAdapter.itemCount == 0) {
                                 emptyState(true)
                             } else {
@@ -100,6 +117,9 @@ class ThirdActivity : AppCompatActivity() {
         binding.refresh.isRefreshing = false
     }
 
+    /**
+     * select user and send the result to second activity
+     */
     private fun selectUser() {
         pagingAdapter.setOnItemClickCallback(
             object : UserPagingAdapter.OnItemClickCallback {

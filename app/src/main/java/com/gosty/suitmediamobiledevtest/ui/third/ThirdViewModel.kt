@@ -11,6 +11,9 @@ import com.gosty.suitmediamobiledevtest.core.domain.usecases.UserUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
+/**
+ * ViewModel for ThirdActivity
+ */
 @HiltViewModel
 class ThirdViewModel @Inject constructor(
     private val userUseCase: UserUseCase

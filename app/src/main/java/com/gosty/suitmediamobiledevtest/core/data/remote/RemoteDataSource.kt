@@ -7,6 +7,9 @@ import com.gosty.suitmediamobiledevtest.core.data.remote.response.UserResponse
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/**
+ * as data source from API
+ */
 @Singleton
 class RemoteDataSource @Inject constructor(
     private val apiService: ApiService

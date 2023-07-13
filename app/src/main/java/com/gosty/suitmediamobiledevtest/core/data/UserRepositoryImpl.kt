@@ -13,6 +13,9 @@ import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/**
+ * Repository for user data
+ */
 @Singleton
 class UserRepositoryImpl @Inject constructor(
     private val remoteDataSource: RemoteDataSource
@@ -26,7 +29,7 @@ class UserRepositoryImpl @Inject constructor(
             pagingSourceFactory = {
                 remoteDataSource.getUsers()
             }
-        ).flow
+        ).flow  // Mapping from response to model
             .map { data ->
                 data.map { response ->
                     DataMapper.mapUserResponseToUserModel(response)

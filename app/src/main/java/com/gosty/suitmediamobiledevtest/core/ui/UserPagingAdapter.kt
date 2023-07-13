@@ -10,10 +10,16 @@ import com.gosty.suitmediamobiledevtest.R
 import com.gosty.suitmediamobiledevtest.core.domain.models.UserModel
 import com.gosty.suitmediamobiledevtest.databinding.ItemUserCardBinding
 
+/**
+ * Paging adapter for user data
+ */
 class UserPagingAdapter :
     PagingDataAdapter<UserModel, UserPagingAdapter.MyViewHolder>(DIFF_CALLBACK) {
     private lateinit var onItemClickCallback: OnItemClickCallback
 
+    /**
+     * callback for card is clicked
+     */
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
     }
@@ -37,6 +43,9 @@ class UserPagingAdapter :
         fun onItemClicked(user: UserModel)
     }
 
+    /**
+     * Setup view
+     */
     class MyViewHolder(val binding: ItemUserCardBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(user: UserModel) {
             binding.apply {

@@ -17,6 +17,9 @@ class FirstActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFirstBinding
     private var getFile: File? = null
 
+    /**
+     * get image from gallery
+     */
     private val launcherIntentGallery = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) {
@@ -39,6 +42,9 @@ class FirstActivity : AppCompatActivity() {
 
     private fun setupView() {
         binding.apply {
+            /**
+             * select image
+             */
             ivAvatar.setOnClickListener {
                 setAvatar()
             }

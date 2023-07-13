@@ -6,6 +6,9 @@ import com.gosty.suitmediamobiledevtest.core.domain.repositories.UserRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
+/**
+ * Implementing contract from use case
+ */
 class UserInteractor @Inject constructor(
     private val repository: UserRepository
 ) : UserUseCase {

@@ -13,6 +13,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
 import java.util.concurrent.TimeUnit
 
+/**
+ * Provide ApiService using dependency injection
+ */
 @Module
 @InstallIn(SingletonComponent::class)
 class NetworkModule {

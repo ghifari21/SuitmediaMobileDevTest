@@ -8,6 +8,9 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
 import dagger.hilt.android.scopes.ViewModelScoped
 
+/**
+ * Dependency Injection UI level
+ */
 @Module
 @InstallIn(ViewModelComponent::class)
 abstract class AppModule {

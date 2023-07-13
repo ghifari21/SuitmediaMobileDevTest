@@ -5,6 +5,9 @@ import com.gosty.suitmediamobiledevtest.core.data.remote.response.UserResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+/**
+ * Service to get data from API
+ */
 interface ApiService {
     @GET("users")
     suspend fun getUsers(

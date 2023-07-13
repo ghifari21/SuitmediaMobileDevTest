@@ -7,6 +7,9 @@ import com.gosty.suitmediamobiledevtest.core.data.remote.response.UserResponse
 import retrofit2.HttpException
 import java.io.IOException
 
+/**
+ * Service for getting paging data
+ */
 class UsersPagingSource(
     private val apiService: ApiService
 ) : PagingSource<Int, UserResponse>() {
