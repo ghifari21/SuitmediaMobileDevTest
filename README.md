@@ -40,3 +40,6 @@ Implementing Clean Architecture
 <img src="https://github.com/ghifari21/SuitmediaMobileDevTest/blob/312e18cf115f280fa10be93786a8facbce5e98ff/screenshots/Third%20Screen%20Empty%20State.png" width="24%" height="40%"/>
 <img src="https://github.com/ghifari21/SuitmediaMobileDevTest/blob/312e18cf115f280fa10be93786a8facbce5e98ff/screenshots/Third%20Screen%20Pull%20to%20Refresh.png" width="24%" height="40%"/>
 </p>
+
+## Download
+[Click here](https://drive.google.com/file/d/1Zm_MKaNQH1zh2I3kYELNBsF6xZ-Y5xnJ/view?usp=sharing)
