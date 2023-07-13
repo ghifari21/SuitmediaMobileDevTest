@@ -33,6 +33,7 @@ Implementing Clean Architecture
 <img src="https://github.com/ghifari21/SuitmediaMobileDevTest/blob/312e18cf115f280fa10be93786a8facbce5e98ff/screenshots/Second%20Screen%20With%20Selected%20User.png" width="24%" height="40%"/>
 </p>
 
+- Third Screen
 <p>
 <img src="https://github.com/ghifari21/SuitmediaMobileDevTest/blob/312e18cf115f280fa10be93786a8facbce5e98ff/screenshots/Third%20Screen.png" width="24%" height="40%"/>
 <img src="https://github.com/ghifari21/SuitmediaMobileDevTest/blob/312e18cf115f280fa10be93786a8facbce5e98ff/screenshots/Third%20Screen%20Loading%20State.png" width="24%" height="40%"/>
